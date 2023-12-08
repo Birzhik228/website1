@@ -10,7 +10,7 @@ function backToTop() {
   });
   button.on("click", (e) => {
     e.preventDefault();
-    $("html").animate({ scrollTop: 0 }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height() - $(window).height() }, 1000);
   });
 }
 backToTop();
